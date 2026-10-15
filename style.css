@@ -69,23 +69,25 @@ footer {
 
 footer a {
     color: #1769aa;
+    text-decoration: none;
 }
 
-```css
-.logo-contact {
-    display: inline-block;
-    width: 28px;
-    margin-right: 8px;
-    color: #1769aa;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer p {
-    margin: 12px 0;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 18px;
 }
-```
+
+.logo-contact {
+    display: inline-block;
+    margin-right: 8px;
+    color: #1769aa;
+    font-size: 20px;
+}
 
 @media (max-width: 600px) {
     .banniere {
