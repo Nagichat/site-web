@@ -2,82 +2,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mon site</title>
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #222;
-    }
-
-    header img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      display: block;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-    }
-
-    h1 {
-      color: #1769aa;
-    }
-
-    p {
-      line-height: 1.7;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <img
-      src="photos/Departement_geii.png"
-      alt="Departement geii"
-    >
-  </header>
 
-  <main>
-    <h1>Bienvenue sur mon site</h1>
+    <!-- Grande image en haut -->
+    <header class="banniere">
+        <img src="photos/Departement_geii.png" alt="Département GEII">
+    </header>
 
-    <p>
-      Bonjour et bienvenue sur mon site internet.
-      Cette page me permet de présenter un sujet,
-      un projet ou une activité.
-    </p>
+    <!-- Liens vers les autres pages -->
+    <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </nav>
 
-    <h2>À propos</h2>
+    <hr>
 
-    <p>
-      Ici, tu peux écrire un texte plus détaillé pour
-      expliquer ce que tu souhaites présenter.
-      Tu peux ajouter plusieurs paragraphes et titres.
-    </p>
-  </main>
+    <!-- Contenu principal -->
+    <main>
+        <h1>Bienvenue sur mon site</h1>
+        <p>
+            Bla bla bla... Écris ici le texte que tu souhaites présenter.
+        </p>
+    </main>
 
-  <footer>
-    © 2026 - Mon site
-  </footer>
+    <hr>
+
+    <!-- Coordonnées -->
+    <footer>
+        <h2>Mes coordonnées</h2>
+        <p>Email : <a href="mailto:e22502683@etudiant.univ-brest.fr">e22502683@etudiant.univ-brest.fr</a></p>
+    </footer>
+
 </body>
 </html>
