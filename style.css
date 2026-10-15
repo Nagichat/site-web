@@ -71,13 +71,21 @@ footer a {
     color: #1769aa;
 }
 
-.logo-mail {
+```css
+.logo-contact {
     display: inline-block;
+    width: 28px;
     margin-right: 8px;
     color: #1769aa;
     font-size: 20px;
+    text-align: center;
     vertical-align: middle;
 }
+
+footer p {
+    margin: 12px 0;
+}
+```
 
 @media (max-width: 600px) {
     .banniere {
