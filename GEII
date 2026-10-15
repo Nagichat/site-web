@@ -1,0 +1,65 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Grande image en haut -->
+    <header class="banniere">
+        <img src="photos/Departement_geii.jpg" alt="Département GEII">
+    </header>
+
+    <!-- Liens vers les autres pages -->
+    <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </nav>
+
+    <hr>
+
+    <!-- Contenu principal -->
+    <main>
+        <h1>Bienvenue sur mon site</h1>
+        <p>
+            Bla bla bla... Écris ici le texte que tu souhaites présenter.
+        </p>
+    </main>
+
+    <hr>
+
+    <!-- Coordonnées -->
+    <footer>
+        <h2>Coordonnées</h2>
+        <p>
+            <span class="logo-contact">✉</span>
+            <a href="mailto:iutbrestmorlaix@univ-brest.fr">Email</a>
+        </p>
+
+        <p>
+            <span class="logo-contact">☎</span>
+            <a href="tel:+33298016050">02 98 01 60 50</a>
+        </p>
+    
+        <p>
+            <span class="logo-contact">📍</span>
+            Brest, France
+        </p>
+    
+        <p>
+            <span class="logo-contact">📷</span>
+            <a href="https://www.instagram.com/iutbrestmorlaix?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" target="_blank">
+                Instagram
+            </a>
+        </p>
+        <img src="photos/logo_iut.png" alt="Logo" class="logo-footer">
+    </footer>
+
+</body>
+</html>
