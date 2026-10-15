@@ -71,6 +71,14 @@ footer a {
     color: #1769aa;
 }
 
+.logo-mail {
+    display: inline-block;
+    margin-right: 8px;
+    color: #1769aa;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
 @media (max-width: 600px) {
     .banniere {
         height: 220px;
