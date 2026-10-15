@@ -66,10 +66,12 @@ main {
 /* Coordonnées en bas */
 footer {
     position: relative;
+    background-color: white;
+    padding: 25px;
 }
 
 footer a {
-    color: #FFFFFF;
+    color: #1769aa;
     text-decoration: none;
 }
 
