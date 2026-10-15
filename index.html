@@ -1,31 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mon site</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 20px;
       background: #f4f6f8;
       color: #222;
     }
-    h1 { color: #1769aa; }
+
+    header img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
     main {
-      background: white;
+      max-width: 800px;
+      margin: 40px auto;
       padding: 30px;
+      background: white;
       border-radius: 12px;
+    }
+
+    h1 {
+      color: #1769aa;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <img
+      src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600"
+      alt="Paysage de montagne"
+    >
+  </header>
+
   <main>
-    <h1>Bienvenue surj mon site !</h1>
-    <p>Voici mon premier site web.</p>
-    <p>Je pourrai y prészzzzenter mes projets et mes activités.</p>
+    <h1>Bienvenue sur mon site</h1>
+
+    <p>
+      Bonjour et bienvenue sur mon site internet.
+      Cette page me permet de présenter un sujet,
+      un projet ou une activité.
+    </p>
+
+    <h2>À propos</h2>
+
+    <p>
+      Ici, tu peux écrire un texte plus détaillé pour
+      expliquer ce que tu souhaites présenter.
+      Tu peux ajouter plusieurs paragraphes et titres.
+    </p>
   </main>
+
+  <footer>
+    © 2026 - Mon site
+  </footer>
 </body>
 </html>
