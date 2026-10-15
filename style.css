@@ -14,14 +14,17 @@ body {
 .banniere {
     width: 100%;
     height: 350px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
 .banniere img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    object-position: top left;
 }
 
 /* Menu de navigation */
