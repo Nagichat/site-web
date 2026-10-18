@@ -1,69 +1,334 @@
- 
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mon site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Après le GEII - Poursuites d'études et métiers</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Grande image en haut -->
+    <!-- Bannière -->
     <header class="banniere">
         <img src="photos/GEII.jpg" alt="Département GEII">
     </header>
 
-    <!-- Liens vers les autres pages -->
+    <!-- Menu de navigation -->
     <nav class="menu">
         <a href="index.html">Accueil</a>
-        <a href="GEII.html">GEII</a>
-        <a href="ENER.html">ENER</a>
-        <a href="ELEN.html">ELEN</a>
-        <a href="AUTO.html">AUTO</a>
-        <a href="PROJET.html">PROJET</a>
-        <a href="Après_GEII.html">Après GEII</a>
+        <a href="GEII.html">Le GEII</a>
+        <a href="ENER.html">Énergie</a>
+        <a href="ELEN.html">Électronique</a>
+        <a href="AUTO.html">Automatisme</a>
+        <a href="PROJET.html">Projets</a>
+        <a href="Après_GEII.html">Après le GEII</a>
     </nav>
- 
 
     <hr>
 
-    <!-- Contenu principal -->
     <main>
-        <h1>Bienvenue sur mon site</h1>
+        <h1>Que faire après un BUT GEII ?</h1>
+
         <p>
-            Bla bla bla... Écris ici le texte que tu souhaites présenter.
+            Le Bachelor Universitaire de Technologie en Génie Électrique
+            et Informatique Industrielle (BUT GEII) offre plusieurs possibilités
+            après l'obtention du diplôme. Les étudiants peuvent poursuivre
+            leurs études en école d'ingénieurs ou en master, ou entrer directement
+            dans la vie professionnelle.
+        </p>
+
+        <p>
+            Les débouchés dépendent notamment du parcours choisi, des compétences
+            acquises, des résultats et du projet professionnel de chaque étudiant.
+        </p>
+
+        <section class="competences" id="poursuite-etudes">
+            <h2>1. Poursuivre ses études</h2>
+
+            <details class="competence">
+                <summary>Les écoles d'ingénieurs</summary>
+                <p>
+                    Après le BUT GEII, il est possible de candidater dans une école
+                    d'ingénieurs pour obtenir un diplôme d'ingénieur, généralement
+                    après trois années supplémentaires. L'admission dépend de
+                    l'école et du dossier de candidature.
+                </p>
+                <p>Les domaines possibles comprennent notamment :</p>
+                <ul>
+                    <li>Génie électrique et électrotechnique ;</li>
+                    <li>Électronique et systèmes embarqués ;</li>
+                    <li>Automatique et robotique ;</li>
+                    <li>Informatique industrielle ;</li>
+                    <li>Énergie et énergies renouvelables ;</li>
+                    <li>Télécommunications et systèmes numériques.</li>
+                </ul>
+                <p>
+                    Les candidatures peuvent se faire sur dossier, entretien
+                    ou concours selon les établissements. Il faut vérifier les
+                    conditions d'admission propres à chaque école.
+                </p>
+            </details>
+
+            <details class="competence">
+                <summary>Exemples d'écoles d'ingénieurs</summary>
+                <p>
+                    Voici quelques établissements à explorer pour rechercher
+                    une spécialisation adaptée à un profil GEII :
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.ensea.fr/" target="_blank">
+                            ENSEA
+                        </a>
+                        – électronique, systèmes embarqués et informatique.
+                    </li>
+                    <li>
+                        <a href="https://www.enib.fr/" target="_blank">
+                            ENIB
+                        </a>
+                        – électronique, informatique et systèmes industriels.
+                    </li>
+                    <li>
+                        <a href="https://www.polytech.univ-nantes.fr/" target="_blank">
+                            Polytech Nantes
+                        </a>
+                        – formations d'ingénieurs dans plusieurs domaines scientifiques et techniques.
+                    </li>
+                    <li>
+                        <a href="https://www.insa-rennes.fr/" target="_blank">
+                            INSA Rennes
+                        </a>
+                        – formations d'ingénieurs en sciences et technologies.
+                    </li>
+                    <li>
+                        <a href="https://www.utc.fr/" target="_blank">
+                            UTC
+                        </a>
+                        – formations d'ingénieurs en génie électrique, informatique et systèmes.
+                    </li>
+                </ul>
+                <p>
+                    Cette liste est indicative : toutes les spécialités ne sont
+                    pas nécessairement accessibles directement après le BUT GEII.
+                    Il faut consulter les admissions parallèles et les prérequis
+                    de chaque formation.
+                </p>
+            </details>
+
+            <details class="competence">
+                <summary>La poursuite en master ou en autre formation</summary>
+                <p>
+                    Une poursuite d'études à l'université est également envisageable,
+                    selon le parcours et les conditions d'admission.
+                </p>
+                <ul>
+                    <li>Master en électronique ;</li>
+                    <li>Master en énergie et génie électrique ;</li>
+                    <li>Master en automatique et systèmes industriels ;</li>
+                    <li>Formations spécialisées en informatique industrielle.</li>
+                </ul>
+                <p>
+                    Le BUT GEII est un diplôme de niveau bac+3. Pour un projet
+                    de poursuite d'études, il est important de comparer les
+                    prérequis et les modalités de sélection des formations.
+                </p>
+            </details>
+        </section>
+
+        <section class="competences" id="metiers">
+            <h2>2. Les métiers après le GEII</h2>
+
+            <details class="competence">
+                <summary>Électricité et énergie</summary>
+                <p>
+                    Les diplômés intéressés par l'énergie peuvent travailler
+                    sur les installations électriques, la distribution d'énergie,
+                    les équipements industriels ou l'efficacité énergétique.
+                </p>
+                <ul>
+                    <li>Technicien en génie électrique ;</li>
+                    <li>Technicien de maintenance électrique ;</li>
+                    <li>Technicien en énergies renouvelables ;</li>
+                    <li>Chargé d'études en installations électriques.</li>
+                </ul>
+            </details>
+
+            <details class="competence">
+                <summary>Électronique et systèmes embarqués</summary>
+                <p>
+                    Ce domaine concerne la conception, les essais, la mise au point
+                    et la maintenance de cartes électroniques et de systèmes
+                    informatiques intégrés dans des équipements.
+                </p>
+                <ul>
+                    <li>Technicien en électronique ;</li>
+                    <li>Technicien en systèmes embarqués ;</li>
+                    <li>Technicien d'essais et de mesures ;</li>
+                    <li>Technicien en instrumentation.</li>
+                </ul>
+            </details>
+
+            <details class="competence">
+                <summary>Automatisme et robotique</summary>
+                <p>
+                    Les professionnels de ce secteur programment, mettent en service
+                    et entretiennent des systèmes automatisés utilisés dans
+                    l'industrie.
+                </p>
+                <ul>
+                    <li>Automaticien ;</li>
+                    <li>Technicien en robotique industrielle ;</li>
+                    <li>Technicien en informatique industrielle ;</li>
+                    <li>Technicien de mise en service.</li>
+                </ul>
+            </details>
+
+            <details class="competence">
+                <summary>Informatique industrielle et réseaux</summary>
+                <p>
+                    Ces métiers associent informatique, équipements électroniques
+                    et communication entre les machines. Ils contribuent au
+                    fonctionnement et à la supervision des installations.
+                </p>
+                <ul>
+                    <li>Technicien en informatique industrielle ;</li>
+                    <li>Technicien réseaux industriels ;</li>
+                    <li>Technicien en supervision de systèmes ;</li>
+                    <li>Technicien en systèmes communicants.</li>
+                </ul>
+            </details>
+
+            <details class="competence">
+                <summary>Maintenance, essais et production</summary>
+                <p>
+                    Ces activités visent à garantir le bon fonctionnement,
+                    la fiabilité et la sécurité des équipements techniques.
+                </p>
+                <ul>
+                    <li>Technicien de maintenance industrielle ;</li>
+                    <li>Technicien qualité ;</li>
+                    <li>Technicien de production ;</li>
+                    <li>Technicien d'essais et de validation.</li>
+                </ul>
+            </details>
+
+            <details class="competence">
+                <summary>Devenir ingénieur après des études supplémentaires</summary>
+                <p>
+                    Après une école d'ingénieurs ou une formation adaptée,
+                    les diplômés peuvent viser des fonctions avec davantage
+                    de responsabilités dans la conception, le développement,
+                    la gestion de projets ou l'encadrement technique.
+                </p>
+                <ul>
+                    <li>Ingénieur en génie électrique ;</li>
+                    <li>Ingénieur en électronique ;</li>
+                    <li>Ingénieur automaticien ;</li>
+                    <li>Ingénieur en systèmes embarqués ;</li>
+                    <li>Ingénieur en énergie ;</li>
+                    <li>Ingénieur en robotique industrielle.</li>
+                </ul>
+            </details>
+        </section>
+
+        <section class="competences" id="secteurs">
+            <h2>3. Les secteurs d'activité</h2>
+
+            <p>
+                Les compétences acquises en GEII peuvent être utilisées dans
+                de nombreux secteurs :
+            </p>
+
+            <ul>
+                <li>Industrie et production ;</li>
+                <li>Énergie et réseaux électriques ;</li>
+                <li>Aéronautique et spatial ;</li>
+                <li>Automobile et transports ;</li>
+                <li>Télécommunications ;</li>
+                <li>Robotique et automatisation ;</li>
+                <li>Bâtiments et installations électriques ;</li>
+                <li>Recherche, essais et développement.</li>
+            </ul>
+        </section>
+
+        <section class="competences" id="choisir">
+            <h2>4. Quel parcours choisir ?</h2>
+
+            <details class="competence">
+                <summary>Je souhaite continuer en école d'ingénieurs</summary>
+                <p>
+                    Renseigne-toi sur les admissions parallèles, les spécialités
+                    proposées, les résultats attendus et les possibilités
+                    d'alternance. Compare plusieurs écoles avant de candidater.
+                </p>
+            </details>
+
+            <details class="competence">
+                <summary>Je souhaite travailler après le BUT</summary>
+                <p>
+                    Consulte les offres d'emploi en lien avec ton parcours,
+                    les stages réalisés et les compétences techniques que tu
+                    maîtrises. Les postes proposés varient selon les entreprises
+                    et l'expérience demandée.
+                </p>
+            </details>
+
+            <details class="competence">
+                <summary>Je souhaite étudier en alternance</summary>
+                <p>
+                    Certaines formations d'ingénieurs proposent l'apprentissage.
+                    Cette voie permet de suivre des enseignements tout en acquérant
+                    une expérience professionnelle en entreprise. Les places et
+                    conditions d'accès varient selon les écoles.
+                </p>
+            </details>
+        </section>
+
+        <p>
+            Pour en savoir plus sur la formation, consulte également
+            <a href="GEII.html">la présentation du BUT GEII</a>
+            et les pages consacrées aux parcours
+            <a href="ENER.html">Énergie</a>,
+            <a href="ELEN.html">Électronique</a> et
+            <a href="AUTO.html">Automatisme</a>.
         </p>
     </main>
 
     <hr>
 
-    <!-- Coordonnées -->
+    <!-- Pied de page -->
     <footer>
-        <h2>Coordonnées</h2>
         <p>
             <span class="logo-contact">✉</span>
-            <a href="mailto:iutbrestmorlaix@univ-brest.fr">Email</a>
+            <a href="mailto:iutbrestmorlaix@univ-brest.fr">
+                Nous contacter
+            </a>
         </p>
 
         <p>
             <span class="logo-contact">☎</span>
-            <a href="tel:+33298016050">02 98 01 60 50</a>
+            <a href="tel:+33298016050">
+                02 98 01 60 50
+            </a>
         </p>
-    
+
         <p>
             <span class="logo-contact">📍</span>
-            Brest, France
+            IUT de Brest-Morlaix
         </p>
-    
+
         <p>
-            <span class="logo-contact">📷</span>
-            <a href="https://www.instagram.com/iutbrestmorlaix?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" target="_blank">
+            <span class="logo-contact">◎</span>
+            <a href="https://www.instagram.com/" target="_blank">
                 Instagram
             </a>
         </p>
-        <img src="photos/logo_iut.png" alt="Logo" class="logo-footer">
+
+        <img src="photos/logo_iut.png" alt="Logo de l'IUT" class="logo-footer">
     </footer>
 
 </body>
 </html>
+```
