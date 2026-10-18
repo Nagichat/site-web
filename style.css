@@ -1,4 +1,8 @@
 
+/* ========================================
+   STYLE GENERAL
+======================================== */
+
 * {
     box-sizing: border-box;
 }
@@ -10,7 +14,10 @@ body {
     background-color: #f4f6f8;
 }
 
-/* Grande image en haut */
+/* ========================================
+   BANNIERE
+======================================== */
+
 .banniere {
     width: 100%;
     height: 350px;
@@ -27,7 +34,10 @@ body {
     object-position: bottom left;
 }
 
-/* Menu de navigation */
+/* ========================================
+   MENU DE NAVIGATION
+======================================== */
+
 .menu {
     display: flex;
     justify-content: center;
@@ -47,23 +57,32 @@ body {
     text-decoration: underline;
 }
 
-/* Traits de séparation */
+/* ========================================
+   TRAITS DE SEPARATION
+======================================== */
+
 hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 0;
 }
 
-/* Texte principal */
+/* ========================================
+   CONTENU PRINCIPAL
+======================================== */
+
 main {
     max-width: 900px;
+    min-height: 200px;
     margin: 35px auto;
     padding: 25px;
     line-height: 1.7;
-    min-height: 200px;
 }
 
-/* Conteneur des compétences */
+/* ========================================
+   CONTENEUR DES COMPETENCES
+======================================== */
+
 .competences {
     max-width: 900px;
     margin: 20px auto;
@@ -75,7 +94,10 @@ main {
     margin-bottom: 30px;
 }
 
-/* Chaque compétence */
+/* ========================================
+   CASES DEROULANTES
+======================================== */
+
 .competence {
     display: block;
     margin: 10px 0;
@@ -84,6 +106,9 @@ main {
     border-radius: 6px;
     border-left: 3px solid #17365d;
 }
+
+/* Titres des cases */
+
 .competence summary {
     color: #17365d;
     font-size: 16px;
@@ -92,12 +117,14 @@ main {
     list-style: none;
 }
 
-/* Masquer la flèche par défaut du navigateur */
+/* Masquer la fleche par defaut */
+
 .competence summary::-webkit-details-marker {
     display: none;
 }
 
-/* Symbole + plus discret */
+/* Symbole + */
+
 .competence summary::after {
     content: "+";
     float: right;
@@ -106,12 +133,14 @@ main {
     color: #777;
 }
 
-/* Symbole − lorsque la case est ouverte */
+/* Symbole - lorsque la case est ouverte */
+
 .competence[open] summary::after {
     content: "−";
 }
 
-/* Description plus petite */
+/* Description des cases */
+
 .competence p {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -120,19 +149,23 @@ main {
     color: #555;
 }
 
-/* Listes plus compactes */
+/* Listes dans les cases */
+
 .competence ul {
     padding-left: 20px;
-    line-height: 1.6;
     margin-top: 10px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
 .competence li {
     margin-bottom: 3px;
 }
 
-/* Texte au-dessus du menu de niveau */
+/* ========================================
+   LABELS ET MENUS DEROULANTS
+======================================== */
+
 .competence label {
     display: block;
     margin-top: 15px;
@@ -141,7 +174,6 @@ main {
     color: #17365d;
 }
 
-/* Menus déroulants de niveau */
 .competence select {
     display: block;
     width: 100%;
@@ -160,11 +192,14 @@ main {
     border-color: #4169a1;
 }
 
-/* Coordonnées en bas */
+/* ========================================
+   PIED DE PAGE
+======================================== */
+
 footer {
     position: relative;
-    background-color: white;
     padding: 25px;
+    background-color: white;
 }
 
 footer a {
@@ -182,6 +217,8 @@ footer p {
     margin: 10px 18px;
 }
 
+/* Icones des coordonnees */
+
 .logo-contact {
     display: inline-block;
     margin-right: 8px;
@@ -189,76 +226,12 @@ footer p {
     font-size: 20px;
 }
 
+/* Logo de l'IUT */
+
 .logo-footer {
     position: absolute;
-    bottom: 10px;
     right: 15px;
+    bottom: 10px;
     width: 120px;
     height: auto;
-}
-
-/* Adaptation aux écrans de téléphone */
-@media (max-width: 600px) {
-    .banniere {
-        height: 220px;
-    }
-
-    .menu {
-        gap: 18px;
-    }
-
-    main {
-        margin: 15px auto;
-        padding: 12px;
-    }
-
-    .competence {
-        padding: 15px;
-    }
-
-    .competence summary {
-        font-size: 19px;
-    }
-
-    .competence select {
-        max-width: 100%;
-    }
-
-    footer {
-        padding: 20px 15px 145px;
-    }
-
-    footer p {
-        display: flex;
-        margin: 12px 0;
-    }
-
-    .logo-footer {
-        width: 100px;
-        right: 15px;
-        bottom: 15px;
-    }
-}
-
-
-
-
-
-/* Titres cliquables plus petits */
-
-
-/* Adaptation sur téléphone */
-@media (max-width: 600px) {
-    .competence {
-        padding: 10px 12px;
-        margin: 8px 0;
-    }
-
-    .competence summary {
-        font-size: 15px;
-    }
-
-    .competence p {
-        font-size: 13px;
-    }
 }
