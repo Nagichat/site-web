@@ -63,6 +63,101 @@ main {
     min-height: 200px;
 }
 
+/* Conteneur des compétences */
+.competences {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.competences h2 {
+    color: #17365d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Chaque compétence */
+.competence {
+    display: block;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 5px solid #17365d;
+}
+
+/* Titres cliquables */
+.competence summary {
+    color: #17365d;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Masquer la flèche par défaut du navigateur */
+.competence summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Ajouter un + lorsque la compétence est fermée */
+.competence summary::after {
+    content: "+";
+    float: right;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+/* Afficher un − lorsque la compétence est ouverte */
+.competence[open] summary::after {
+    content: "−";
+}
+
+/* Description de la compétence */
+.competence p {
+    margin-top: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Liste des AC */
+.competence ul {
+    padding-left: 22px;
+    line-height: 1.8;
+    margin-top: 18px;
+}
+
+.competence li {
+    margin-bottom: 5px;
+}
+
+/* Texte au-dessus du menu de niveau */
+.competence label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #17365d;
+}
+
+/* Menus déroulants de niveau */
+.competence select {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: white;
+    color: #222;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.competence select:focus {
+    outline: 2px solid #4169a1;
+    border-color: #4169a1;
+}
+
 /* Coordonnées en bas */
 footer {
     position: relative;
@@ -100,6 +195,7 @@ footer p {
     height: auto;
 }
 
+/* Adaptation aux écrans de téléphone */
 @media (max-width: 600px) {
     .banniere {
         height: 220px;
@@ -111,5 +207,33 @@ footer p {
 
     main {
         margin: 15px auto;
+        padding: 12px;
+    }
+
+    .competence {
+        padding: 15px;
+    }
+
+    .competence summary {
+        font-size: 19px;
+    }
+
+    .competence select {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 20px 15px 145px;
+    }
+
+    footer p {
+        display: flex;
+        margin: 12px 0;
+    }
+
+    .logo-footer {
+        width: 100px;
+        right: 15px;
+        bottom: 15px;
     }
 }
